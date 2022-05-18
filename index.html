@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Em Nazih Restaurant</title>
+    <!-- Favicons -->
+    <link href="assets/img/logo.jpg" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://m.themenu.ae/public/custom/css/swiper-bundle.min.css">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <!-- CSS Files -->
+    <link href="assets/css/argon-design-system.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link type="text/css" href="assets/css/custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <style>
+        /* Text alignment for body */
+        
+        body {
+            text-align: center;
+        }
+        /* Styling h1 tag */
+        
+        h1 {
+            color: green;
+            text-align: center;
+        }
+        /* Styling modal */
+        
+        .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        
+        .modal-dialog {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .modal .modal-content {
+            padding: 20px 20px 20px 20px;
+            -webkit-animation-name: modal-animation;
+            -webkit-animation-duration: 0.5s;
+            animation-name: modal-animation;
+            animation-duration: 0.5s;
+        }
+        
+        @-webkit-keyframes modal-animation {
+            from {
+                top: -100px;
+                opacity: 0;
+            }
+            to {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes modal-animation {
+            from {
+                top: -100px;
+                opacity: 0;
+            }
+            to {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+            <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.jpg" alt="" class="img-fluid"></a>
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">Em Nazih Restaurant</a></h1>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row">
+                <div class="">
+                    <h1>Welcome to <span>Em Nazih</span></h1>
+                    <div class="btns d-flex align-items-center">
+                        <a href="#" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+                        <span data-aos="zoom-in" data-aos-delay="200">
+                            <a href="assets/video/video1.mp4" class="glightbox play-btn"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= Group Section ======= -->
+        <section class="section pt-lg-0 restaurant-main" id="restaurant-content">
+            <input type="hidden" id="rid" value="93" />
+            <div class="container-restorant">
+                <div class="swiper menuSwiper" style="top: 50px">
+                    <div class="swiper-wrapper swiper-wrap-menu">
+                        <div class="swiper-slide swiper-slide-style">
+                            <div class="product-description-grid">
+                                <span></span>
+                            </div>
+                            <!-- Grills list-layout -->
+                            <div class="row-view grills0 list-layout active-view">
+                                <div id="sandwich" class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-grid-product">
+                                    <a onclick="window.location.href='items.html'">
+                                        <div class="strip product-item-grid ">
+                                            <figure>
+                                                <img src="assets/img/menu/meat shawarma sandwich.jpg " loading="lazy " class="img-fluid lazy " alt=" ">
+                                            </figure>
+                                            <div class="product-content-grid ">
+                                                <div class="product-title-grid ">
+                                                    <h2>SHAWARMA SANDWICH</h2>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-description-grid ">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div id="plate" class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-grid-product ">
+                                    <a onclick="window.location.href='items.html'">
+                                        <div class="strip product-item-grid ">
+                                            <figure>
+                                                <img src="assets/img/menu/Chicken Shawarma Plate.jpg " loading="lazy " class="img-fluid lazy " alt=" ">
+                                            </figure>
+                                            <div class="product-content-grid ">
+                                                <div class="product-title-grid ">
+                                                    <h2>SHAWARMA PLATE</h2>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="family" class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-grid-product ">
+                                    <a onclick="window.location.href='items.html'">
+                                    <div class="strip product-item-grid ">
+                                        <figure>
+                                            <img src="assets/img/menu/Mix Shawarma Family.jpg " loading="lazy " class="img-fluid lazy " alt=" ">
+                                        </figure>
+                                        <div class="product-content-grid ">
+                                            <div class="product-title-grid ">
+                                                <h2>SHAWARMA FAMILY</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description-grid ">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div id="snack" class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-grid-product ">
+                                    <a onclick="window.location.href='items.html'">
+                                        <div class="strip product-item-grid ">
+                                            <figure>
+                                                <img src="assets/img/menu/fahita chicken.jpg " loading="lazy " class="img-fluid lazy " alt=" ">
+                                            </figure>
+                                            <div class="product-content-grid ">
+                                                <div class="product-title-grid ">
+                                                    <h2>SNACK</h2>
+                                             </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-description-grid ">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div id="appetizers" class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-grid-product ">
+                                    <a onclick="window.location.href='items.html'">
+                                        <div class="strip product-item-grid ">
+                                            <figure>
+                                                <img src="assets/img/menu/Humus with Meat Shawarma.jpg " loading="lazy " class="img-fluid lazy " alt=" ">
+                                            </figure>
+                                            <div class="product-content-grid ">
+                                                <div class="product-title-grid ">
+                                                    <h2>APPETIZERS</h2>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-description-grid ">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-grid-product ">
+                                    <a onclick="window.location.href='items.html'">
+                                        <div class="strip product-item-grid ">
+                                            <figure>
+                                                <img src="assets/img/menu/7up-free.jpeg " loading="lazy " class="img-fluid lazy " alt=" ">
+                                            </figure>
+                                            <div class="product-content-grid ">
+                                                <div class="product-title-grid ">
+                                                    <h2>DRINKS</h2>
+                                                    <script>
+                                                        sessionStorage.setItem("choise", "drinks");
+                                                    </script>                                                  </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-description-grid ">
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- End #main -->
+
+
+    <div id="preloader "></div>
+    <a href="# " class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
+    <script src="assets/vendor/php-email-form/validate.js "></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>
