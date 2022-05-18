@@ -1,9 +1,3 @@
-/**
- * Template Name: Restaurantly - v3.7.0
- * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function() {
     "use strict";
 
@@ -57,8 +51,6 @@
             }
         })
     }
-    window.addEventListener('load', navbarlinksActive)
-    onscroll(document, navbarlinksActive)
 
     /**
      * Scrolls to an element with header offset
@@ -72,29 +64,6 @@
             top: elementPos - offset,
             behavior: 'smooth'
         })
-    }
-
-    /**
-     * Toggle .header-scrolled class to #header when page is scrolled
-     */
-    let selectHeader = select('#header')
-    let selectTopbar = select('#topbar')
-    if (selectHeader) {
-        const headerScrolled = () => {
-            if (window.scrollY > 100) {
-                selectHeader.classList.add('header-scrolled')
-                if (selectTopbar) {
-                    selectTopbar.classList.add('topbar-scrolled')
-                }
-            } else {
-                selectHeader.classList.remove('header-scrolled')
-                if (selectTopbar) {
-                    selectTopbar.classList.remove('topbar-scrolled')
-                }
-            }
-        }
-        window.addEventListener('load', headerScrolled)
-        onscroll(document, headerScrolled)
     }
 
     /**
@@ -171,23 +140,14 @@
         });
     }
 
-    /**
-     * Menu isotope and filter
-     */
     window.addEventListener('load', () => {
-        let menuContainer = select('.menu-container');
+        let menuContainer = select('.menu-container');        
         if (menuContainer) {
             let menuIsotope = new Isotope(menuContainer, {
                 itemSelector: '.menu-item',
                 layoutMode: 'fitRows'
             });
-
             let menuFilters = select('#menu-flters li', true);
-
-            let menuitem = select('.menu-item');
-            console.log(menuContainer);
-            console.log(menuFilters);
-
             on('click', '#menu-flters li', function(e) {
                 e.preventDefault();
                 menuFilters.forEach(function(el) {
@@ -277,6 +237,16 @@
             once: true,
             mirror: false
         })
+    });
+
+    $("a[href^='#']").click(function(e) {
+        e.preventDefault();
+        
+        var position = $($(this).attr("href")).offset().top;
+    
+        $("body, html").animate({
+            scrollTop: position
+        } /* speed */ );
     });
 
 })()

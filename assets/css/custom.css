@@ -3376,6 +3376,9 @@ lottie-player {
     box-shadow: -1px 5px 22.08px 1.92px rgb(0 0 0 / 40%);
 }
 
+.grills0 {
+    cursor: pointer;
+}
 .col-grid-product .product-item-grid video {
     position: absolute;
     top: 0;
@@ -3406,9 +3409,13 @@ lottie-player {
     word-break: break-word;
 }
 
+.dd-flex {
+    flex-direction: column !important;
+}
+
 .product-title-grid h2 {
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0;
     text-transform: capitalize;
