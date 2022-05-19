@@ -1,16 +1,4 @@
-/*@media only screen and (max-width:  768px){
-    .orders-filters{
-        display: none;
-    }
-}
-
-@media only screen and (max-width:  991px){
-    .orders-filters{
-        display: none;
-    }
-}*/
-
-.grayscale-05 {
+/* .grayscale-05 {
     top: -75px;
 }
 
@@ -31,9 +19,9 @@
     top: 0;
     content: "";
     background-color: rgba(0, 0, 0, .7);
-}
+} */
 
-a {
+/* a {
     color: #32325d;
     text-decoration: none;
     background-color: transparent;
@@ -43,7 +31,7 @@ a:hover {
     color: #32325d;
     text-decoration: none;
     background-color: transparent;
-}
+} */
 
 @media only screen and (max-width: 768px) {
     .card-status-history-driver {
@@ -3379,6 +3367,7 @@ lottie-player {
 .grills0 {
     cursor: pointer;
 }
+
 .col-grid-product .product-item-grid video {
     position: absolute;
     top: 0;
@@ -3415,8 +3404,8 @@ lottie-player {
 
 .product-title-grid h2 {
     color: white;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.7rem;
+    font-weight: 500;
     margin-bottom: 0;
     text-transform: capitalize;
 }
